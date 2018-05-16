@@ -20,6 +20,40 @@ body {
   display: block;
 }
 
+.AppCard {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.AppCard p {
+  margin: 0;
+}
+
+.AppCard div {
+  padding: 10px !important;
+}
+
+.Compare .AppCard {
+  display:inline-block;
+  margin: 20px;
+  vertical-align: top;
+  min-height: 230px;
+  position: relative
+}
+
+.AppBadge {
+  position: absolute !important;
+  top: -25px;
+  right: -25px;
+}
+
+.AppBadge span{
+  width: 80px !important;
+  height: 80px !important;
+  font-size: 15px !important;
+}
+
 .App-title {
   font-size: 1.5em;
 }
