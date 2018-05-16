@@ -1,5 +1,6 @@
 ```
 git clone https://github.com/vaiulian/github-spa.git
+cd github-spa
 npm install
 npm start
 ```
