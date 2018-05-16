@@ -1,0 +1,28 @@
+.visionProfile {
+    padding: 15px;
+    text-align: center;
+}
+
+.visionProfile-avatarImg {
+    margin-top: 50px;
+}
+
+.visionProfile-title {
+    margin-top: 30px;
+}
+
+.visionProfile-title h5 {
+    color: #689f38;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.visionProfile-domain span, .visionProfile-license span {
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.visionProfile-license {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
