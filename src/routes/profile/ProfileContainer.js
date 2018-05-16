@@ -10,6 +10,8 @@ import { getGithubProfile } from './ProfileActions';
  * @returns {Object} containing the props to be used in the presentational component
  */
 export const mapStateToProps = state => ({
+  isProfileLoaded: state.Profile.isProfileLoaded,
+  githubProfile: state.Profile.githubProfile,
 });
 
 /**
