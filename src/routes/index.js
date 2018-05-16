@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import React from 'react';
 import Home from './home';
 import ProfileContainer from './profile/ProfileContainer';
+import CompareContainer from './profile/compare/CompareContainer';
 
 
 /**
@@ -17,8 +18,8 @@ export default function Routes() {
       <div className="col s12 m12">
         <div className="container containerApp">
           <Route exact path="/" component={Home} />
-          <Route title="Profile" path="/profile-page" component={ProfileContainer} />
-          <Route title="Compare Profiles" path="/compare-profiles" component={ProfileContainer} />
+          <Route exact title="Profile" path="/profile" component={ProfileContainer} />
+          <Route title="Compare Profiles" path="/profile/compare" component={CompareContainer} />
         </div>
       </div>
     </div>

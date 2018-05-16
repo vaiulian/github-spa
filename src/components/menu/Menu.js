@@ -32,13 +32,13 @@ export default function Menu({ openedDrawerState, closeMenuActionState }) {
             </Link>
           </MenuItem>
           <MenuItem className="linkToProfile" onTouchTap={closeMenuActionState}>
-            <Link className="valign-wrapper" to="/profile-page">
+            <Link className="valign-wrapper" to="/profile">
                             Profile
             </Link>
           </MenuItem>
           <MenuItem className="linkToLicense" onTouchTap={closeMenuActionState}>
-            <Link className="valign-wrapper" to="/license">
-                            License
+            <Link className="valign-wrapper" to="/profile/compare">
+                            Compare
             </Link>
           </MenuItem>
         </div>
