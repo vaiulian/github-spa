@@ -2,7 +2,6 @@ import { Route } from 'react-router-dom';
 
 import React from 'react';
 import Home from './home';
-import License from './license';
 import ProfileContainer from './profile/ProfileContainer';
 
 
@@ -19,7 +18,7 @@ export default function Routes() {
         <div className="container containerApp">
           <Route exact path="/" component={Home} />
           <Route title="Profile" path="/profile-page" component={ProfileContainer} />
-          <Route title="Compare Profiles" path="/compare-profiles" component={License} />
+          <Route title="Compare Profiles" path="/compare-profiles" component={ProfileContainer} />
         </div>
       </div>
     </div>
