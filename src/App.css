@@ -48,6 +48,16 @@ body {
   right: -25px;
 }
 
+.enum {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.enum li {
+  text-align: left;
+  padding-left: 15px;
+}
+
 .AppBadge span{
   width: 80px !important;
   height: 80px !important;
