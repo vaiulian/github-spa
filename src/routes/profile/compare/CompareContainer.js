@@ -10,6 +10,8 @@ import { getGithubCompareProfiles } from './../ProfileActions';
  * @returns {Object} containing the props to be used in the presentational component
  */
 export const mapStateToProps = state => ({
+  isProfileCompareLoaded: state.Profile.isProfileCompareLoaded,
+  githubCompareProfiles: state.Profile.githubCompareProfiles,
 });
 
 /**
