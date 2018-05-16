@@ -60,7 +60,7 @@ class App extends Component {
               <div>
                 <Header />
                 <Menu />
-                <Route title="Vision Portal" path="/" component={Routes} />
+                <Route path="/" component={Routes} />
               </div>
             </Router>
           </div>
