@@ -2,8 +2,12 @@ export const initialState = {
   isProfileLoaded: false,
   isProfileCompareLoaded: false,
   githubProfile: {},
-  githubCompareProfiles: {},
+  githubCompareProfiles: [],
 };
+
+let maxFollowers = 0;
+let maxIndex;
+let updatedPofiles;
 
 /**
  * License Redux reducer.
@@ -40,9 +44,24 @@ const reducer = (state = initialState, action) => {
       break;
 
     case 'GOT_GITHUB_COMPARE_PROFILE':
+
+      maxFollowers = 0;
+      maxIndex = 0;
+
+      // check for the most followers
+      updatedPofiles = action.profiles.map((profile, index) => {
+        if (profile.followers > maxFollowers) {
+          maxFollowers = profile.followers;
+          maxIndex = index;
+        }
+        return profile;
+      });
+
+      updatedPofiles[maxIndex].winner = true;
+
       newState = Object.assign({}, state, {
         isProfileCompareLoaded: true,
-        githubCompareProfiles: action.profiles,
+        githubCompareProfiles: updatedPofiles,
       });
       break;
 
