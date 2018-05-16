@@ -1,3 +1,15 @@
+```
+git clone https://github.com/vaiulian/github-spa.git
+npm install
+npm start
+```
+
+You know the drill :J
+
+
+______________________________________________________________
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
